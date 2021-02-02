@@ -19,7 +19,7 @@ const JournalDetail = ({ data,deleTe }) => {
     
     }
     if (product) {
-     
+      reset();
      productData = (
         <div >
            <div className="journal-detail-wrapper">
@@ -48,7 +48,7 @@ const JournalDetail = ({ data,deleTe }) => {
           <div>
             <button className="button-save-journal" onClick={() => {
                 update();
-                reset();
+               // reset();
                 console.log(text);
               }}
                 >Save</button>
